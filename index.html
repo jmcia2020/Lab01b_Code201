@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 
 <html>
-  
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,26 +8,42 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <style>
-      header {background-color: teal; 
-      height: 200px;
-      width: 100%}
+    <style> 
+      header {
+      background-color: teal;
+      height: 200px; 
+      width: 100%
+      }
 
-      body {background-color: white;
-      height: 300px;
-      width: 100%}
+      body {
+      background-color: white;
+      height: 300px; 
+      width: 100%
+      }
 
-      h1 {color:teal};
-      
-      section {background-color: turquoise;
-      height:300px; 
-      width: 100%}
+      h1 {color:teal}
 
-      footer {background-color: teal;
+      section {
+      background-color: turquoise; 
+      height: 300px; 
+      width: 100%
+      }
+
+      footer {
+      background-color: teal;
       height: 100px; 
-      width: 100%}
+      width: 100%
+      };
 
-    /* inline style https://www.w3schools.com/html/html_css.asp */ 
+      #one {
+      background-color: teal;
+      height: 75px;
+      width: 100%
+      font-size: 24
+      color: blue;
+      }
+
+      /* inline style https://www.w3schools.com/html/html_css.asp */ 
     </style>
   
 </head>
@@ -43,8 +58,16 @@
     
     <h1>Class Lab 01b</h1>
 
-      <Section> 
-        <h2>This is a setion</h2>
+      <Section>
+      
+        <p style="color:teal; background-color: rgb(233, 241, 38);">What is your first name?</p>
+      
+        <p style="color:rgb(238, 241,38); background-color: teal">What is your last name?</p>
+
+        <p style="color:teal; background-color: rgb(238, 241, 38);">What coding class are you taking?</p>
+
+        <p style="color:rgb(238, 241,38); background-color: teal">Who is your instructor?</p>
+
 
       </Section>
 
@@ -52,23 +75,25 @@
     
   </body>
 
-  <Footer></Footer>
+  <Footer>
+
+  </Footer>
 
   <script>
   
     var firstName = prompt('What is your first name?');
     var lastName = prompt('What is your last name?');
-    
     console.log('Your name is : ' + firstName + ' ' + lastName);
     
     var codingClass = prompt('What coding class are you taking?');
     var instructorName = prompt('What is the name of your instructor?');
-    
     console.log('You\'re taking' + codingClass + 'with ' + instructorName + '?');
 
-    alert(firstName + '!' +' ' + instructorName + ' ' + 'is great at teaching' + ' ' + codingClass);
+    alert(firstName + '!' +' ' + instructorName + ' ' + 'is great at teaching' + " " + codingClass + '!');
 
   </script>
+
+</html>
 
 <!-- Craigs Code 
   var firstName = prompt('What\'s your first name?');
@@ -81,4 +106,3 @@ var systemName = prompt('What computer system are you running?');
 console.log('Your name is ' + firstName + ' ' +  'and your favorite game is ' + gameName + ' and you use ' + systemName + ' as your computer system.');
 
 alert('Your name is ' + firstName + ' ' +  'and your favorite game is ' + gameName + ' and you use ' + systemName + ' as your computer system.');  -->
-</html>
